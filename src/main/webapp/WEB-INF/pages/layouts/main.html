@@ -16,7 +16,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" th:classappend="${#httpServletRequest.requestURI.contains('users')} ? 'active'" th:href="${(#mvc.url('UC#showAllUsers'))}">User list</a></li>
+                <li class="nav-item"><a class="nav-link" th:classappend="${#httpServletRequest.requestURI.contains('users')} ? 'active'" th:href="${(#mvc.url('UC#showAllUsers')).build()}">User list</a></li>
             </ul>
         </div>
     </div>
